@@ -36,7 +36,7 @@ body {
     grid-area: navbar;
     display: flex;
     justify-content: space-around;
-    background-color: #444;
+    background-color: grey;
     padding: 15px 0;
 }
 
