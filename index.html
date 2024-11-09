@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Noah Mkono">
+    <meta name="author" content="Noah Mkono">
+    <title>WDD 131 - Dynamic Web Fundamentals - Noah Mkono</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    WDD 131 - Noah Mkono
+    <header class="header">
+        <h1>WDD 131: Dynamic Web Fundamentals - Noah Mkono</h1>
+        <nav class="navigation">
+            <a href="www.linkedin.com/in/noah-mkono-50240566">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?id=p15&lang=eng#p15">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- About Me Section -->
+        <section class="myself">
+            <h2>About Me</h2>
+            <p>My name is Noah Mkono. I was born in Zimbabwe and currently live in Cape Town, South Africa.  am a father of two children, a girl 14 and a boy 6. I have worked as a Sales Consultant for Healthbridge, a medical billing software and services company. I am passionate about football and enjoy a wide range of music genres.</p>
+            <img src="images\profile-image-NM.jpg" alt="Noah Mkono">
+        
+            <h2>Malawi, Africa</h2>
+            <p>Malawi is known as the "Warm Heart of Africa" for its friendly people. It is famous for Lake Malawi, one of the world's largest freshwater lakes, which is home to diverse fish species. The country's economy is primarily based on agriculture, with tobacco, tea, and sugar as key exports.</p>
+            <img src="images/malawi-flag.jpg" alt="Official Flag of Malawi">
+        </section>
+
+        <!-- Web Dev Resources Section -->
+        <section class="resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://www.allison.com">Allison</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Noah Mkono, South Africa.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
+
