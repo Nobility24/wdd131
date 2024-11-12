@@ -33,7 +33,7 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul {
+nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
@@ -51,6 +51,7 @@ nav ul :hover {
         display: flex;
         justify-content: space-around;
     }
+
 }
 .active {
 	color: yellow;
@@ -120,11 +121,11 @@ h3 {
 .card ul {
     margin-bottom: 10px;
 }
-.card li {
+.card a {
     color: #007bff;
     text-decoration: none;
 }
-.card li:hover {
+.card li :hover {
     text-decoration: underline;
 }
 footer {
