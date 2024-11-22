@@ -26,7 +26,7 @@ button.addEventListener("click", () => {
         input.value = "";
         // add an event listener to the delete button that removes the li element when clicked
         input.focus();
-        del.addEventListener("click", () => {
+        deleteButton.addEventListener("click", () => {
             ul.removeChild(li);
             // send the focus to the input element
             input.focus();
