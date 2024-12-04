@@ -3,19 +3,13 @@
         display: none;
     }
 
-
-    nav {
+    nav ul {
         display: flex;
-        position: initial;
-        justify-content: center;
-        margin: auto;
-        width: 80%;
-        flex-direction: row;
     }
 
-    nav a {
+    nav ul li {
         display: block;
-        /* flex: 1 1 100%; */
+        flex: 1 1 100%;
     }
 
     nav a.active {
