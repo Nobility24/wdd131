@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: #2c3e50;
+    background: #418ad3;
     color: white;
     padding: 1rem 0;
 
@@ -42,44 +42,32 @@ h1 {
 }
 
 .navigation a:hover {
-    background: gray;
-}
-
-main {
-    flex: 1;
-    max-width: 1200px;
-    width: 95%;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    background: rgb(214, 116, 116);
 }
 
 .parent {
     display: grid;
     height: 50vh;
-    grid-template: 1fr auto / 1fr auto;
+    grid-template-columns: 1fr auto;
 }
 
-.content,
-.aside {
+.child1,
+.child2 {
     padding: 2rem;
-    border-radius: 8px;
-    background: white;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
 }
 
-.content {
+.child1 {
     background: #bbdefb;
 }
 
-.aside {
-    background: #c8e6c9;
+.child2 {
+    background: gray;
 }
 
 footer {
-    background: #1a2530;
+    background: #091f36;
     color: white;
     text-align: center;
     padding: 1.5rem;
-    margin-top: auto;
 }
