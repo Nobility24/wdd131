@@ -62,7 +62,13 @@ main {
     padding: 0.5rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    gap: 1rem;  
+} 
+
+h1 {
+    color: #003366;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 .card {
@@ -70,6 +76,7 @@ main {
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 1rem;
+    margin-top: 0rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
