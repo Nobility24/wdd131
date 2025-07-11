@@ -1,12 +1,63 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wdd131</title>
-    </head>
-    <body>
-        <h1>WDD 131 Noah Mkono</h1>
-        <h2>Dynamic Web Fundamentals</h2>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Noah Mkono</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Noah Mkono. Home page for the course, including web development resources, assignments, and course information.">
+    <meta name="author" content="Noah Mkono">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Noah Mkono</span>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/noah-mkono-50240566">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                <li><a href="place-holder">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" id="my-info"> 
+            <h2>About Me</h2>
+            <div id="profile">
+                <p>My name is Noah Mkono and I go by 'The Good King Noah.' I was born in Zimbabwe, raised in Zimbabwe, and
+                    later moved to Malawi, the ancestral land of my forefathers. I then moved again in search of better
+                    economic opportunities to South Africa, where I currently live. I work for a Logistics Company in Cape
+                    Town.</p>
+                <img src="images/nobility.jpg" alt="Good King Noah" width="300" height="200" class="profile-image">
+            </div>
+
+            <h3>Lilongwe, Malawi</h3>
+            <div id="country-info">
+                <img src="images/malawi-waving-flag.jpg" alt="The Rising Sun" width="180" height="180" class="country-flag">
+                <p>Since I am identified as Malawian, I am proud to introduce my country as the Warm Heart of Africa — a
+                    land of breathtaking landscapes, rich culture, and resilient, welcoming people. Nestled between majestic
+                    mountains and the shimmering waters of Lake Malawi, Malawi offers a unique blend of natural beauty and
+                    heartfelt hospitality that leaves a lasting impression on all who visit.</p>
+            </div>
+        </section>
+    
+        <section class="card" id="course-info">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                <li><a href="place-holder">Place Holder Image</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
+        <p><span id="last-updated"></span></p>
+    </footer>
+
+</body>
+</html>
