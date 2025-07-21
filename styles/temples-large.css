@@ -1,0 +1,28 @@
+@media (min-width: 640px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+    }   
+
+         #menu-toggle {
+             display: none;
+             /* hide the hamburger on large screens */
+         }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
