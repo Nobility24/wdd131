@@ -1,12 +1,12 @@
 :root {
-    --primary-bg: #f0f0f0;
+    --primary-bg: white;
     --header-bg: red;
     --footer-bg: blue;
     --block-bg: #fff;
     --block-shadow: 0 2px 4px rgba(0,0,0,0.08);
     --hero-shadow: black 0px 0px 10px;
     --block-radius: 8px;
-    --header-color: #f8f8f8;
+    --header-color: white;
     --footer-color: white;
     --accent: green;
     --accent-text: whitesmoke;
@@ -26,7 +26,6 @@ h1, h2 {
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     background-color: var(--primary-bg);
 }
