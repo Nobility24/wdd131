@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Cape Town</title>
+    <meta name="description" content="Responsive country profile page with weather details and accessible layout.">
+    <meta name="author" content="Noah Mkono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cape Town</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 601px) and (max-width: 1200px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp" alt="Cape Town Hero Image" class="responsive-img">
+            </picture>
+        </section>
+        <div class="blocks-row">
+            <section id="data-block">
+                <h2>Data</h2>
+                <p>Area: 2,461 sq km <br>
+                    Population: 4,772,846 <br>
+                    Currency: South African Rand (ZAR) <br>
+                    Languages: English, Afrikaans, Xhosa <br>
+                    Time Zone: UTC+2 <br>
+                    Calling Code: +27 <br>
+                    Internet TLD: .za </p>
+            </section>
+            <section id="weather-block">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <img src="images/weather-icon.webp" alt="Partly Cloudy Weather Icon" class="weather-img">
+                <p>Temperature: <span id="temp">12</span> °C <br>
+                    Conditions: Partly Cloudy <br>
+                    Wind: <span id="wind">5</span> km/h <br>
+                    Wind Chill: <span id="windchill">N/A</span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
+        <p>Last Modification: <span id="last-updated"></span></p>
+    </footer>
+</body>
+
+</html>

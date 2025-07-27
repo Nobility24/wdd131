@@ -1,0 +1,56 @@
+@media (min-width: 640px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        max-height: 1200px;
+        overflow: hidden;
+    }
+
+    .hero picture,
+    .hero img {
+        width: 100%;
+        display: block;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .blocks-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    #data-block, #weather-block {
+        width: 100%;
+        max-width: 460px;
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    #data-block {
+        top: 10rem;
+        left: 6rem;
+    }
+
+    #weather-block {
+        bottom: 0rem;
+        right: 6rem;
+    }
+
+ /* Pseudo-element for weather icon in large view */
+    #weather-block h2::after {
+        content: "";
+        font-size: 1.4rem;
+        margin-left: 0.5rem;
+    }
+
+    .weather-img {
+        display: none;
+    }
+    
+}
