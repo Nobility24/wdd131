@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album</title>
+    <meta name="description"
+        content="Developing responsive web pages following best practices and use valid HTML and CSS and demonstrating proficiency with JavaScript language syntax and using JavaScript to respond to events and dynamically modify HTML.">
+    <meta name="author" content="Noah Mkono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button> 
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#" data-filter="home" class="active">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="gallery"></div>
+            
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
+        <p><span id="last-updated"></span></p>
+    </footer>
+</body>
+
+</html>
