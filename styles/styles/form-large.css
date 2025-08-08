@@ -1,0 +1,29 @@
+@media (min-width: 601px) {
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating-stars {
+    font-size: 2rem;
+    color: #e1e5eb;
+    transition: all 0.2s;
+    margin-bottom: 5px;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+}
