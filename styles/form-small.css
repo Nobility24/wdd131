@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: #2c3e50;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -106,6 +106,10 @@ select {
     color: #f1c40f;
 }
 
+.rating-item:hover input:checked + .rating-stars {
+    color: #f39c12 !important;
+}
+
 .rating-label {
     font-size: 0.9rem;
     color: #7f8c8d;
@@ -127,7 +131,7 @@ select {
 }
 
 .counter-display {
-    background: #2c3e50;
+    background: #3498db;
     color: white;
     text-align: center;
     padding: 15px;
@@ -139,11 +143,11 @@ select {
 .counter-value {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #3498db;
+    color: black;
 }
 
 .submit-btn {
-    background: linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(#9c2c13, #6f200e);;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -185,7 +189,7 @@ footer {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     padding: 60px;
-    margin-bottom: 100px;
+    margin: 3rem;
     text-align: center;
 }
 

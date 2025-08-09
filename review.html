@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Confirmation Page</title>
     <meta name="description" content="Creating product review form confirmation page using good form design. ">
     <meta name="author" content="Noah Mkono">
-    <link rel="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="styles/form-small.css" rel="stylesheet">
     <link href="styles/form-large.css" rel="stylesheet">
-    <script src="scripts/form.js">defer</script>
+    <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
-    <div class="confirmation">
-    <h1>Product Review Form</h1>
-    <p>Thanks for taking the time to review our product. We appreciate your feedback!</p>
+    <div class="container">
+        <div class="confirmation">
+            <h1>Product Review Form</h1>
+            <p>Thanks for taking the time to review our product. We appreciate your feedback!</p>
+            <div class="counter-display">
+                <p>Reviews submitted from this device: <span id="counter" class="counter-value">0</span></p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
         <p><span id="last-updated"></span></p>
     </footer>
 </body>
+
 </html>

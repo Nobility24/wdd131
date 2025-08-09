@@ -1,4 +1,3 @@
- // Product data array
 const products = [
     {
         id: "fc-1888",
@@ -25,56 +24,57 @@ const products = [
         name: "Warp Equalizer",
         averagerating: 5.0
     }
-]
-// Populate product dropdown
+];
+
+// DOM Ready Handler
 document.addEventListener('DOMContentLoaded', function() {
+    // Populate product dropdown if exists
     const productSelect = document.getElementById('product');
-    
-    products.forEach(product => {
-        const option = document.createElement('option');
-        option.value = product.id;
-        option.textContent = product.name;
-        productSelect.appendChild(option);
-    });
-    
+    if (productSelect) {
+        products.forEach(product => {
+            const option = document.createElement('option');
+            option.value = product.id;
+            option.textContent = product.name;
+            productSelect.appendChild(option);
+        });
+    }
+
     // Initialize review counter
-    let reviewCount = localStorage.getItem('reviewCount');
-    if (reviewCount === null) {
-        reviewCount = 0;
-    }
-    document.getElementById('counter').textContent = reviewCount;
-})
-// Form submission handler
-document.getElementById('reviewForm').addEventListener('submit', function(e) {
-    // Get the current count
-    let reviewCount = localStorage.getItem('reviewCount');
-    if (reviewCount === null) {
-        reviewCount = 0;
-    } else {
-        reviewCount = parseInt(reviewCount);
+    updateCounterDisplay();
+    
+    // Set current year
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
     }
     
-    // Increment and save the count
-    reviewCount++;
-    localStorage.setItem('reviewCount', reviewCount);
+    // Set last updated date
+    const lastUpdatedElement = document.getElementById('last-updated');
+    if (lastUpdatedElement) {
+        const today = new Date();
+        lastUpdatedElement.innerHTML = `Last updated: <span class="highlight">${new Intl.DateTimeFormat(
+            "en-US",
+            { dateStyle: "full" }
+        ).format(today)}</span>`;
+    }
     
-    // Update the counter display
-    document.getElementById('counter').textContent = reviewCount;
-    
-    // Proceed with form submission
-    return true;
+    // Form submission handler
+    const reviewForm = document.getElementById('reviewForm');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function(e) {
+            // Increment counter
+            let reviewCount = localStorage.getItem('reviewCount');
+            reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
+            localStorage.setItem('reviewCount', reviewCount);
+        });
+    }
 });
-       
-const year = document.querySelector("#year");
-const full = document.querySelector("#last-updated");
 
-const today = new Date();
-
-year.innerHTML = today.getFullYear();
-
-full.innerHTML = `Last updated: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
+// Update counter display on both pages
+function updateCounterDisplay() {
+    const counterElement = document.getElementById('counter');
+    if (counterElement) {
+        const reviewCount = localStorage.getItem('reviewCount') || 0;
+        counterElement.textContent = reviewCount;
+    }
+}

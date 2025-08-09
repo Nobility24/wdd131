@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Creating product a review form page using good form design, with specific field requirements, and include a submission confirmation with a counter. ">
+    <meta name="description"
+        content="Creating product a review form page using good form design, with specific field requirements, and include a submission confirmation with a counter. ">
     <meta name="author" content="Noah Mkono">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/form-small.css">
     <link rel="stylesheet" href="styles/form-large.css">
-    <script src="scripts/form.js">defer</script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         </header>
 
         <main>
-            <form id="reviewForm" method="get" action="review.html">
+            <form method="get" action="review.html" class="reviewForm">
                 <div class="card">
                     <h2>Product Information</h2>
 
@@ -34,7 +36,7 @@
                             <!-- Options will be populated by JavaScript -->
                         </select>
                     </div>
-                
+
 
                     <div class="form-group">
                         <label class="required">Overall Rating</label>
@@ -129,6 +131,7 @@
                 </div>
             </form>
         </main>
+    </div>
 
     <footer>
         <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
