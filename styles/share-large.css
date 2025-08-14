@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .header-top {
+        flex-wrap: wrap;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    #nav-menu {
+        display: block;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    #nav-menu ul {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0.5rem 0;
+    }
+    
+    #nav-menu li {
+        margin: 0 0.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+}

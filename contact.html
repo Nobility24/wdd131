@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Echoes From The Road - Gallery Page- WDD131 Project</title>
+    <meta name="description"
+        content="Building a website project demonstrating mastery of the course learning outcomes in HTML, CSS, and JavaScript. This project will create a dynamic and responsive website that adheres to development standards.">
+    <meta name="author" content="Noah Mkono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/contact-small.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+    <script src="scripts/contact.js" defer></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="images/on-the-road.webp" alt="Echoes From The Road Logo" class="logo">
+                <h1>Echoes From The Road</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">About Us</a></li>
+                    <li><a href="diaries.html">Diaries</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contact-form" class="container">
+                <h2>Share Your Experince</h2>
+                <form method="get" action="share.html" class="shareForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Contact Details (Optional)</label>
+                        <input type="text" id="contact" name="contact" placeholder="Email or phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location *</label>
+                        <input type="text" id="location" name="location" required placeholder="Where are you from?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">I am a... *</label>
+                        <select id="role" name="role" required>
+                            <option value="">Select your role</option>
+                            <option value="driver">Driver</option>
+                            <option value="rider">Rider</option>
+                            <option value="storyteller">Storyteller</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="story">Share Your Story (Max 1000 words) *</label>
+                        <textarea id="story" name="story" rows="5" maxlength="600" required
+                            placeholder="Tell us your experience..."></textarea>
+                        <div class="word-counter">Words: <span id="wordCount">0</span>/1000</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Do you want us to share your experience on our page? *</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="share" value="yes" required> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="share" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What do you think about our content? (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="feedback" value="engaging">  Engaging Stories
+                            </label>
+                            <label>
+                                <input type="checkbox" name="feedback" value="interesting"> Interesting stories
+                            </label>
+                            <label>
+                                <input type="checkbox" name="feedback" value="inspiring"> Inspiring Stories
+                            </label>
+                            <label>
+                                <input type="checkbox" name="feedback" value="Humorous"> Humurous Stories
+                            </label>
+                            <label>
+                                <input type="checkbox" name="feedback" value="improve"> Need Improvement
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="contact-btn">Submit Your Story</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-flags">
+                <img src="images/flag-for-flag-malawi-svgrepo-com.svg" alt="Malawian flag">
+                <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
+                <img src="images/south-africa-flag-icon.svg" alt="South African flag">
+            </div>
+            <div class="social-links">
+                <a href="https://web.facebook.com/noahmkono24" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p><span id="last-updated"></span></p>
+        </footer>
+    
+    </body>
+    
+    </html>

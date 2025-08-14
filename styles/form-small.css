@@ -107,7 +107,7 @@ select {
 }
 
 .rating-item {
-    position: relative; /* Add this */
+    position: relative; 
 }
 
 .rating-item input:checked + .rating-stars {

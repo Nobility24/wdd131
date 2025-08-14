@@ -1,0 +1,318 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --accent: #f39c12;
+    --light-color: #ecf0f1;
+    --text-color: #333;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--light-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--primary-color);
+    list-style: none;
+    padding: 0;
+}
+
+#nav-menu li {
+    margin: 0.5rem 0;
+}
+
+#nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#nav-menu a:hover {
+    color: var(--secondary-color); 
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#nav-menu a.active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+#img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    z-index: 0; /* stays at the back */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* sits above the hero */
+    pointer-events: none; /* prevents blocking hero clicks if needed */
+}
+
+#img-card,
+#img-card2 {
+    position: absolute;
+    width: 200px;
+}
+
+#img-card2 {
+    top: 80px; /* top left */
+    left: 30px;
+}
+
+#img-card {
+    bottom: 100px; /* bottom right */
+    right: 30px;
+}
+
+#img-card img,
+#img-card2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#intro1,
+#intro2 {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+#intro1 h2 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.story-teasers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.story-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.story-card h3 {
+    color: var(--primary-color);
+}
+
+.story-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.story-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-flags img {
+    width: 30px;
+}
+
+#last-updated {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.social-links {
+    margin: 10px 0;
+    background-color: var(--primary-color); 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color); 
+}
+
+@media (max-width: 767px) {
+    #nav-menu {
+        display: none;
+    }
+
+     #nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        background: var(--primary-color);
+    }
+    
+    #nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        display: block;
+    }
+
+    #nav-menu.show {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--primary-color);
+        z-index: 1000;
+    }
+
+    #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #menu-toggle.active {
+        background: gold;
+        color: #000;
+    }
+
+    .sides {
+        position: static; /* remove absolute positioning */
+        display: flex; /* place images side-by-side */
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        pointer-events: auto; /* clickable if needed */
+    }
+
+    #img-card,
+    #img-card2 {
+        position: static; /* reset positioning */
+        width: 45%; /* make them fit in */
+    }
+
+    #img-card img,
+    #img-card2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+}

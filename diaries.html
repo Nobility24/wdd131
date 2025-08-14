@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Echoes From The Road - Diaries Page- WDD131 Project</title>
+    <meta name="description"
+        content="Building a website project demonstrating mastery of the course learning outcomes in HTML, CSS, and JavaScript. This project will create a dynamic and responsive website that adheres to development standards.">
+    <meta name="author" content="Noah Mkono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/diaries-small.css">
+    <link rel="stylesheet" href="styles/diaries-large.css">
+    <script src="scripts/diaries.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/on-the-road.webp" alt="Echoes From The Road Logo" class="logo">
+            <h1>Echoes From The Road</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="diaries.html">Diaries</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-title">Story Viewer</h2>
+        <p class="subtitle">Read one story at a time. Click 'Next' to continue your journey</p>
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+    
+            <div class="story-container" id="storyContainer">
+                <!-- Story content will be dynamically inserted here -->
+            </div>
+    
+            <div class="controls">
+                <button class="nav-btn" id="prevBtn" disabled>
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+    
+                <div class="story-counter">
+                    Story <span id="currentStory">1</span> of <span id="totalStories">4</span>
+                </div>
+    
+                <button class="nav-btn" id="nextBtn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="contact-section">
+            <a href="contact.html" class="contact-btn">Share Your Story</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-flags">
+            <img src="images/flag-for-flag-malawi-svgrepo-com.svg" alt="Malawian flag">
+            <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
+            <img src="images/south-africa-flag-icon.svg" alt="South African flag">
+        </div>
+        <div class="social-links">
+            <a href="https://web.facebook.com/noahmkono24" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook"><i
+                    class="fab fa-facebook"></i></a>
+        </div>
+        <p><span id="last-updated"></span></p>
+    </footer>  
+</body>
+</html>

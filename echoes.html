@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Echoes From The Road - WDD131 Project</title>
+    <meta name="description"
+        content="Building a website project demonstrating mastery of the course learning outcomes in HTML, CSS, and JavaScript. This project will create a dynamic and responsive website that adheres to development standards.">
+    <meta name="author" content="Noah Mkono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/echoes-small.css">
+    <link rel="stylesheet" href="styles/echoes-large.css">
+    <script src="scripts/echoes.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/on-the-road.webp" alt="Echoes From The Road Logo" class="logo">
+            <h1>Echoes From The Road</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="diaries.html">Diaries</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="intro1">
+            <h2>Every Ride Tells a Story</h2>
+            <p>Behind every destination pin lies a journey worth telling. In Echoes from the Road, you enter the world
+                of an Uber
+                driver, where the city is alive with undiscovered tales, streets become chapters, and strangers become
+                characters.
+                Between the buzz of the motor and the glow of the streetlights, these real-life moments—which range from
+                touching
+                encounters to surprising turns—capture the quiet observations, confessions, and laughs that are
+                exchanged. The journey
+                has just begun, so fasten your seatbelt.</p>
+        </div>
+        <div id="img-container">
+            <section class="hero">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/lagoon-beach.webp">
+                    <source media="(min-width: 601px) and (max-width: 1200px)" srcset="images/table-view.webp">
+                    <img src="images/table-view.webp" alt="Noah with car in Table View" class="hero-img">
+                </picture>
+            </section>
+            <div class="sides">
+                <section id="img-card">
+                    <img src="images/side-photo2.webp" alt="Noah in the car" loading="lazy">
+                </section>
+                <section id="img-card2">
+                    <img src="images/side-photo.webp" alt="Noah outside the car" loading="lazy">
+                </section>
+            </div>
+        </div>
+
+        <div id="intro2">
+            <p>From 2016 to 2019, I navigated the city streets and encountered countless people whose paths
+                momentarily crossed mine. For a while I challenged myself to document one exceptional moment from each
+                day spent
+                travelling. What started out as a journal evolved into a repository of memories, with unfiltered photos
+                and unfiltered thoughts. These entries are more than just rides; they're snapshots of humanity in
+                motion.</p>
+            <section class="story-teasers">
+                <article class="story-card">
+                    <h3>The Fare That Never Spoke</h3>
+                    <p>She stepped in without a word, eyes hidden behind dark glasses. For twenty silent minutes, the
+                        city rolled by until one sentence at the drop-off changed everything.</p>
+                    <a href="diaries.html">Read More →</a>
+                </article>
+
+                <article class="story-card">
+                    <h3>The Wedding Dress Ride</h3>
+                    <p>He flagged me down in the rain, clutching a garment bag. By the time we reached the venue, I
+                        realized I'd
+                        just driven a stranger toward the biggest moment of his life.</p>
+                    <a href="diaries.html">Read More →</a>
+                </article>
+
+                <article class="story-card">
+                    <h3>Midnight Confession</h3>
+                    <p>The streets were empty, but his words filled the car. A simple ride turned into a confession that
+                        had been
+                        bottled up for decades.</p>
+                    <a href="diaries.html">Read More →</a>
+                </article>
+            </section>
+            <div class="contact-section">
+                <a href="contact.html" class="contact-btn">Share Your Story</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-flags">
+            <img src="images/flag-for-flag-malawi-svgrepo-com.svg" alt="Malawian flag">
+            <p>&copy; <span id="year"></span> Noah Mkono, Lilongwe Malawi.</p>
+            <img src="images/south-africa-flag-icon.svg" alt="South African flag">
+        </div>
+        <div class="social-links">
+            <a href="https://web.facebook.com/noahmkono24" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Facebook"><i class="fab fa-facebook"></i></a><!--target:opens the link in a new tab, rel:security best practice for external links -->
+        </div>
+        <p><span id="last-updated"></span></p>
+    </footer>
+</body>
+
+</html>
