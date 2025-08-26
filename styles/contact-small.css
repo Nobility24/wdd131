@@ -76,18 +76,14 @@ h1 {
     color: var(--secondary-color); 
 }
 
-#menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 #nav-menu a.active {
     color: var(--accent);
     font-weight: 700;
 }
+
+.active::before {
+     content: "📍";
+  }
 
 footer {
     background: var(--primary-color);

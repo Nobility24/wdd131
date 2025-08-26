@@ -10,24 +10,28 @@ menuButton.addEventListener("click", () => {
     menuButton.classList.toggle("active", navMenu.classList.contains("show"));
 });
 
-// Set active link
-navLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-        // Remove active class from all links
-        navLinks.forEach(l => l.classList.remove("active"));
-        
-        // Add active class to clicked link
-        this.classList.add("active");
-        
-        // Close mobile menu after click
-        if (window.innerWidth <= 767) {
-            navMenu.classList.remove("show");
-            menuButton.textContent = "☰";
-            menuButton.classList.remove("active");
-        }
-    });
-});
+
 
 // Last update
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('last-updated').textContent = `Last Updated: ${document.lastModified}`;
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('#nav-menu a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        
+        // Special handling for home page (href="#")
+        if (linkPage === '#' && (currentPage === 'index.html' || currentPage === '')) {
+            link.classList.add('active');
+        }
+        // For all other pages
+        else if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});

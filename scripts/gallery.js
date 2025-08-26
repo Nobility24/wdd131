@@ -15,3 +15,22 @@
 
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('last-updated').textContent = `Last Updated: ${document.lastModified}`;
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('#nav-menu a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        
+        // Special handling for home page (href="#")
+        if (linkPage === '#' && (currentPage === 'index.html' || currentPage === '')) {
+            link.classList.add('active');
+        }
+        // For all other pages
+        else if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});

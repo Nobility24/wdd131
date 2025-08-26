@@ -50,15 +50,42 @@ h1 {
     color: var(--text-color);
 }
 
+#menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+#menu-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 #nav-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--primary-color);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#nav-menu.show {
+    display: block;
 }
 
 #nav-menu ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
     list-style: none;
     padding: 0;
 }
@@ -69,25 +96,23 @@ h1 {
 
 #nav-menu a {
     text-decoration: none;
-    color: white;
-    font-weight: 500;
+    color: var(--text-color);
+    font-weight: 800;
 }
 
 #nav-menu a:hover {
-    color: var(--secondary-color); 
-}
-
-#menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+    background-color: gold;
+    color: #000; 
+    border-radius: 4px;
 }
 
 #nav-menu a.active {
     color: var(--accent);
     font-weight: 700;
+}
+
+#nav-menu a[data-page="diaries"]::before {
+    content: "📍 ";
 }
 
 .page-title {
@@ -344,13 +369,8 @@ footer {
         background: none;
         border: none;
         font-size: 1.8rem;
-        color: white;
+        color: black;
         cursor: pointer;
-    }
-    
-    #menu-toggle.active {
-        background: gold;
-        color: #000;
     }
 
     .container {

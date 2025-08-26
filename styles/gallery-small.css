@@ -73,11 +73,14 @@ h1 {
 }
 
 #nav-menu a:hover {
-    color: var(--secondary-color); 
+    display: block;
+    color: black;
+    background: gold; 
+    
 }
 
 #menu-toggle {
-    background: none;
+    background: gold;
     border: none;
     color: white;
     font-size: 1.5rem;
@@ -89,72 +92,76 @@ h1 {
     font-weight: 700;
 }
 
+.active::before {
+     content: "📍";
+  }
+
 h2, p {
     text-align: center;
     margin-top: 1rem;
 }
 
  main {
-            flex: 1;
-            margin: 2rem auto;
-            padding: 0.5rem;
-            max-width: 1200px;
-            width: 100%;
-        }
+    flex: 1;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
 
-        .intro-text {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            padding: 0 1rem;
-        }
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 0 1rem;
+}
 
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-            padding: 1rem;
-        }
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
 
-        .gallery-container > div {
-            display: contents;
-        }
+.gallery-container > div {
+    display: contents;
+}
 
-        .gallery-container figure {
-            margin: 0;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background: white;
-        }
+.gallery-container figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
 
-        .gallery-container figure:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
+.gallery-container figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
-        .gallery-container img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.5s ease;
-        }
+.gallery-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
 
-        .gallery-container figure:hover img {
-            transform: scale(1.05);
-        }
+.gallery-container figure:hover img {
+    transform: scale(1.05);
+}
 
-        .gallery-container figcaption {
-            padding: 1rem;
-            text-align: center;
-            font-weight: 600;
-            color: var(--primary-color);
-            background: white;
-        }
+.gallery-container figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: white;
+}
 
 footer {
     background: var(--primary-color);
@@ -196,45 +203,21 @@ footer {
     color: var(--secondary-color); 
 }
 
- /* Small screens (default) */
-        @media (max-width: 767px) {
-            .gallery-container {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            }
-            
-            header {
-                flex-wrap: wrap;
-            }
-            
-            #nav-menu {
-                display: none;
-            }
-            
-            #nav-menu.active {
-                display: block;
-            }
-        }
-
-@media (min-width: 768px) {
-            #menu-toggle {
-                display: none;
-            }
-                    
-            #nav-menu {
-                display: block;
-                position: static;
-                width: auto;
-                padding: 0;
-                background: transparent;
-            }
-                    
-            #nav-menu ul {
-                flex-direction: row;
-                gap: 1.5rem;
-            }
-                    
-            .gallery-container {
-                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            }
-        }
+@media (max-width: 767px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    header {
+        flex-wrap: wrap;
+    }
+    
+    #nav-menu {
+        display: none;
+    }
+    
+    #nav-menu.active {
+        display: block;
+    }
+}
 

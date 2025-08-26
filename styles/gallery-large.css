@@ -1,9 +1,26 @@
- @media (min-width: 992px) {
-            .gallery-container {
-                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-        }
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #nav-menu {
+        display: block;
+        position: static;
+        width: auto;
+        padding: 0;
+        background: transparent;
+    }
+
+    #nav-menu ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }   
+
+    h1 {
+        font-size: 2rem;
+    }
+}
