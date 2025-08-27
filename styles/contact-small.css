@@ -73,7 +73,9 @@ h1 {
 }
 
 #nav-menu a:hover {
-    color: var(--secondary-color); 
+    background-color: gold;
+    color: #000; 
+    border-radius: 4px;
 }
 
 #nav-menu a.active {

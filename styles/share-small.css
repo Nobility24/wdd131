@@ -29,6 +29,7 @@ header {
     color: white;
     padding: 2rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -75,7 +76,9 @@ h1 {
 }
 
 #nav-menu a:hover {
-    color: var(--secondary-color);
+    background-color: gold;
+    color: #000; 
+    border-radius: 4px;
 }
 
 #menu-toggle {
@@ -89,6 +92,10 @@ h1 {
 #nav-menu a.active {
     color: var(--accent);
     font-weight: 700;
+}
+
+#nav-menu a[data-page="contact"]::before {
+    content: "📍";
 }
 
 main {
@@ -207,7 +214,7 @@ footer {
     }
     
     #menu-toggle.active {
-        background: gold;
+        background: rgba(255, 255, 255, 0.1);
         color: #000;
     }
 }
