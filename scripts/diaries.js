@@ -1,27 +1,22 @@
 const stories = [
             {
-                title: "The Enchanted Forest",
-                content: `<p>Deep in the heart of the Whispering Woods lay a secret known only to the ancient trees. Elara, a young botanist with a passion for the unknown, found herself drawn to these woods by tales of glowing flora that bloomed only under the light of the full moon.</p>
-                <p>As dusk settled, the forest transformed. Trees shimmered with bioluminescent fungi, and flowers pulsed with soft blue light. Elara followed a trail of glowing mushrooms to a clearing where a magnificent tree stood, its bark etched with symbols that seemed to shift and change before her eyes.</p>
-                <p>When she touched the trunk, visions flooded her mind - ancient rituals, forest guardians, and a warning about an approaching darkness. The tree had chosen her as its protector, entrusting her with the knowledge to save the enchanted forest from the shadows creeping at its borders.</p>`
+                title: "Day 1: A Midnight Dash for Love",
+                content: `<p>Today’s story is a sweet one. On New Year’s Eve, at about 11:38, I pick up this jovial woman, who comes and sits with me in the front. I can tell she’s had a few drinks, but she isn’t    really drunk. We immediately start a conversation. I wanted to know why she was leaving the venue just a few minutes before 0000 hours. <p>I listen as she explains, “For the past 8 years, no matter what the circumstances, my husband and I have always spent New Year’s Eve together. But not until today. Somehow, he developed a stomach bug, and he decided to sleep at home, yet he insisted that I (alone) must attend this long-organized party with our friends. It’s been fun all along until I started recognizing the clock ticking close to the beginning of a new year, and I realized something is amiss. So I decided to leave and join my husband. I haven’t called him yet; he has no idea that I am coming back. So if you could hurry a bit and safely get to my place and arrive there before midnight, I will forever be grateful.”</p> After listening to such a beautiful story, I speedily navigated carefully from Protea Valley to Uitzicht with a smile and a joyful heart, making an effort to make this lovely couple maintain their New Year's celebration tradition.</p>
+            <p>Sometimes the greatest surprises happen just before midnight.</p>   `
             },
             {
-                title: "The Clockwork City",
-                content: `<p>In the mechanical metropolis of Cogsworth, time was currency. Citizens wound their heart-springs with golden minutes mined from the Time Quarry. Leo, a street-smart tinkerer, survived by repairing broken chronometers and selling salvaged seconds on the black market.</p>
-                <p>One foggy evening, Leo discovered a peculiar pocket watch that didn't measure minutes, but possibilities. With each tick, it revealed fleeting glimpses of alternate futures. He saw himself as a wealthy magnate, a revolutionary leader, and even as a prisoner in the Hourglass Dungeon.</p>
-                <p>The watch came with a warning: "Every choice unwinds your spring." Leo realized he could manipulate outcomes, but each adjustment shortened his lifespan. As the city faced imminent collapse, he had to decide how many of his remaining hours he would sacrifice to save Cogsworth.</p>`
+                title: "Day 2: The Last Ride - A lifetime of sacrifice",
+                content: `<p>I picked up this old lady in Langa township. She was so excited to go to work for the very last time today. She has raised three daughters on her own, providing them with a decent life and proper education. One of them is married, but all of them are working and doing well for themselves. She said she has no worries about being misinterpreted because her two grandchildren are already in their teens. 
+                And I must say she has a very modest and beautiful house as well. <p/>
+                <p>Happy Retirement Ma Thandeka!.</p>`
             },
             {
-                title: "Beneath the Aurora",
-                content: `<p>Astrid had studied the Northern Lights all her life, but nothing prepared her for what happened that winter solstice. As the emerald ribbons danced across the Arctic sky, they began forming intricate patterns - a celestial language written in light.</p>
-                <p>Guided by ancient Sami legends and her grandmother's journal, Astrid deciphered the message: a plea for help from star travelers stranded in Earth's orbit. The aurora wasn't just charged particles, but a communication beam from an alien vessel trapped in our magnetic field.</p>
-                <p>With only three nights until the solstice ended, Astrid raced to build a transmitter using traditional Sami drums and modern satellite technology. Her success would mean first contact with an interstellar civilization. Failure would condemn the travelers to drift forever among the stars.</p>`
+                title: "Day 3: Six trips, six worlds — who needs a passport when you are an Uber driver?",
+                content: `<p>I had done only six trips today. I didn't do much due to an impromptu change in my daily schedule. However, it was interesting. Here are some interesting conversations I had; <p/> <p>I met two couples; both were on their way to Newlands Cricket Stadium for the test match against the SA Proteas. They were all hopeful that England would do much better. <p/> <p>I took a Finnish family to Table Mountain, and they were proud of their education system, which is rated among the best in the world, and of course, Nokia, which many people mistakenly identify as a Japanese company. <p/> <p>The last guy was super impressive. From the Airport to Sunset Beach. A very big Swiss guy. He was so proud of his country's stability and non-involvement in the world war, as well as its banking system, Swiss chocolate, and Swiss watches. I argued that African politicians often used them to stash stolen money while the masses suffered. I’m all these conversations, believe me, in all of them we came levelled as I gave my own presentation of the beauty, nature, and resourcefulness of Mama Africa. <p/><p>I suppose we're all different in some ways, but we share the same world.</p>`
             },
             {
-                title: "The Memory Painter",
-                content: `<p>Gabriel didn't create art - he extracted it. Using a neural interface and quantum pigments, he painted memories directly from his clients' minds. Wealthy patrons paid fortunes to see their happiest moments immortalized on canvas.</p>
-                <p>Everything changed when a mysterious woman commissioned a painting of a memory she'd lost. As Gabriel navigated her fragmented consciousness, he uncovered a memory not hers - a vision of a future catastrophe that would devastate their city.</p>
-                <p>The painting revealed itself stroke by stroke: collapsing buildings, panicked crowds, and a countdown. Gabriel realized the woman was a time traveler, and the memory was a warning. With each brushstroke, he absorbed more of the impending disaster, but at the cost of his own memories.</p>`
+                title: "Day 4: ",
+                content: `<p></p>`
             }
         ];
 
